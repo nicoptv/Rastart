@@ -1,0 +1,74 @@
+<ion-side-menus enable-menu-with-back-views="true">
+   <ion-side-menu-content>
+      <ion-nav-bar  class="barRouge">
+        <ion-nav-buttons side="left" ng-click="toggleLeftSideMenu()">
+         <button menu-toggle="left" class="button button-icon icon ion-navicon" id="menuBtnLeft"></button>
+        </ion-nav-buttons>
+        <ion-nav-title>
+           <a ng-href="#/menu/home">
+             <img src="img/bandeau.png" alt="" id="bandeau" class="text-center"/>
+           </a>
+        </ion-nav-title>
+        <ion-nav-buttons side="right" ng-click="toggleRightSideMenu()">
+         <button menu-toggle="right" class="button button-icon icon ion-person" id="menuBtnRight"></button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-nav-view name="menuContent"></ion-nav-view>
+   </ion-side-menu-content>
+
+   <ion-side-menu side="left">
+     <ion-content id="bgMenu">
+        <div>
+           <img src="img/bgMenu.jpg" alt="" id="logoMenu"/>
+               <div class="containerMenu" style="margin-top:-400px">
+                  <img src="img/bande.png" class="bande" alt="">
+                  <h4 class="txtMenu" style="width:195px;text-align:center"><a menu-close ng-href="#/menu/home" class="txtMenu">{{'HOME' | translate}}</a></h4>
+               </div>
+               <div class="containerMenu">
+                  <img src="img/bande.png" class="bande" alt="">
+                  <h4 class="txtMenu titleMenu"><a menu-close ng-href="#/menu/artistes" class="txtMenu">{{'PROGRAMMATION' | translate}}</a></h4>
+               </div>
+               <div class="containerMenu">
+                  <img src="img/bande.png" class="bande" alt="">
+                  <h4 class="txtMenu titleMenu"><a menu-close ng-href="#/menu/camping" class="txtMenu">{{'ANNIMATION' | translate}}</a></h4>
+               </div>
+               <div class="containerMenu">
+                  <img src="img/bande.png" class="bande" alt="">
+                  <h4 class="txtMenu titleMenu"><a menu-close ng-href="#/menu/move" class="txtMenu">{{'MOVE' | translate}}</a></h4>
+               </div>
+               <div class="containerMenu">
+                  <img src="img/bande.png" class="bande" alt="">
+                  <h4 class="txtMenu titleMenu"><a menu-close ng-href="#/menu/prevention" class="txtMenu">{{'GUIDE' | translate}}</a></h4>
+               </div>
+               <div class="containerMenu">
+                  <img src="img/bande.png" class="bande" alt="">
+                  <h4 class="txtMenu titleMenu"><a menu-close ng-href="#/menu/test" class="txtMenu">{{'FOUND_FRIEND' | translate}}</a></h4>
+               </div>
+               <div class="containerMenu">
+                  <img src="img/bande.png" class="bande" alt="">
+                  <h4 class="txtMenu titleMenu"><a menu-close ng-href="#/menu/infos" class="txtMenu">{{'INFOS' | translate}}</a></h4>
+               </div>
+        </div>
+     </ion-content>
+   </ion-side-menu>
+
+   <ion-side-menu side="right" style="background-color:#FEFEE2">
+     <ion-header-bar class="bar-clear" menu-close style="background-color:#FEFEE2;text-align:center">
+        <div style="margin-left:5px;">
+           <a href="#" ng-click="changeLanguage('en')" style="visibility:hidden"><img src="img/uk.png" alt="" /></a>
+           <a href="#" ng-click="changeLanguage('fr')" style="visibility:hidden"><img src="img/france.png" alt="" /></a>
+           <a href="#" ng-click="changeLanguage('gr')" style="visibility:hidden"><img src="img/germany.png" alt="" /></a>
+           <a href="#" ng-click="changeLanguage('it')" style="visibility:hidden"><img src="img/italie.png" alt="" /></a>
+           <a href="#" ng-click="changeLanguage('sp')" style="visibility:hidden"><img src="img/spain.png" alt="" /></a>
+           <a href="#" ng-click="changeLanguage('ru')" style="visibility:hidden"><img src="img/russia.png" alt="" /></a>
+           <a href="#" ng-click="changeLanguage('ru')" style="visibility:hidden"><img src="img/russia.png" alt="" /></a>
+        </div>
+     </ion-header-bar>
+     <ion-content style="background-color:#FEFEE2">
+         <div class="" style="text-align:center">
+            <h3><a ng-href="#/menu/login" class="button button-small btnConnect" menu-close>{{'CONNECT' | translate}}</a></h3>
+         </div>
+     </ion-content>
+   </ion-side-menu>
+
+</ion-side-menus>

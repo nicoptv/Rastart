@@ -1,0 +1,27 @@
+<ion-view>
+   <!-- <ion-content id="bgProg"  style="background-color:#FEFEE2"> -->
+   <ion-content style="background-color:#FEFEE2">
+      <div class="bgTitleProg">
+         <h2 style="color:white;font-family:bebas">{{ artiste.name }}</h2>
+      </div>
+
+      <img class="full-image" ng-src="{{ artiste.photo}}">
+         <div class="tabs tabs-light tabs-icon-top static tabProg" style="background-color:#00767A;">
+             <a ng-click="GotoLink('{{artiste.fb}}')" class="tab-item iconProg">
+                 <i class="icon ion-social-facebook"></i> Facebook
+             </a>
+             <a ng-click="GotoLink('{{artiste.tw}}')" class="tab-item iconProg">
+                 <i class="icon ion-social-twitter"></i> Twitter
+             </a>
+             <a ng-click="GotoLink('{{artiste.yt}}')" class="tab-item iconProg">
+                 <i class="icon ion-social-youtube"></i> Youtube
+             </a>
+         </div>
+      <div class="cardProg">
+         <h3 id="titleOneProg">Bio :</h3> <br>
+         <p id="txtOneProg">
+           {{ artiste.description }}
+         </p>
+      </div>
+   </ion-content>
+</ion-view>

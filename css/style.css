@@ -1,0 +1,452 @@
+/***************** GENERAL *****************/
+a {
+   text-decoration: none;
+}
+
+.arrowList {
+   color:white;
+   float:right;
+   margin-top:-25px;
+   margin-right:10px;
+   -webkit-animation-duration: 1.8s;
+}
+
+.titleOne {
+   text-align:center;
+   margin-top:0px;
+   margin-bottom:25px;
+   color:#F5841E;
+}
+
+.textOne {
+   color:#00767A;
+   text-align: justify;
+}
+
+#menuBtnLeft {
+   color:#00767A;
+}
+
+#menuBtnRight {
+   color:#00767A;
+}
+
+.bgBeige {
+   background-color:#FEFEE2;
+}
+
+@font-face {
+  font-family: "bebas";
+  src: url("../lib/ionic/fonts/BEBAS___.TTF");
+  font-weight: normal;
+  font-style: normal; }
+
+/***************** MENU *****************/
+.barRouge {
+   background-color:#FEFEE2;
+   width: 100%;
+}
+
+#bandeau {
+   width: 100%;
+   height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 267px;
+}
+
+#logoMenu {
+   width: 100%;
+}
+
+.txtMenu {
+   color:#FFF;
+   margin-top:0 !important;
+   margin-bottom:0 !important;
+   -webkit-transform: rotate(-9deg);
+   margin-right:auto;
+   margin-left:auto;
+   padding-top:10%;
+   font-family:bebas;
+   font-style : italic;
+}
+
+.titleMenu {
+   width:195px;
+   text-align:center;
+}
+
+.bande {
+   width:275px;
+   position:absolute;
+}
+
+.containerMenu {
+   position:relative;
+   width:225px;
+   margin-top: 2%;
+}
+
+#bgMenu {
+   height: 100%;
+   background-image:url('../img/bgMenu.jpg');
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center top;
+}
+
+.btnConnect {
+   background-color:#00767A;
+   font-family:bebas;
+   color:white;
+   text-align:center;
+}
+/***************** CAMPING *****************/
+.listCamp {
+   height:150px;
+   width:100%;
+   background-size:cover;
+}
+
+.filterCamp {
+   background-color:rgba(0,0,0,0.3);
+   height:150px;
+   width:100%;
+}
+
+.infoListCamp {
+   margin-left:10px;
+   padding-top:5px;
+}
+
+.titleListCamp {
+   color:white;
+   font-family:bebas;
+}
+
+.elementListCamp {
+   color:white;
+   margin-top:-10px;
+}
+
+#bgOneCamp {
+   background-image:url('../img/bgCiel.jpg');
+   background-repeat:no-repeat;
+}
+
+.cardCamp {
+   background-color:rgba(255,255,255,0.9);
+   padding:0 10px 0 10px;
+   margin-top:0;
+}
+
+/***************** HOMEPAGE *****************/
+#bgHome {
+   background-image:url('../img/background.jpg');
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center top;
+}
+
+.itemHome {
+   display: inline-block;
+   font-family:bebas;
+   color:white;
+   height:114%;
+   padding-top:5%;
+   margin-top: 3px;
+}
+
+.bgRouge {
+   background-color:#E54018;
+}
+
+.bgBleu {
+   background-color:#00767A;
+}
+
+.bgOrange {
+   background-color:#F5841E
+}
+
+.itemImgHome {
+   width:64px;
+}
+
+.activeHome {
+   text-align:center;
+   height:10%;
+   margin-top:44px;
+}
+
+#middleHome {
+   height:80%;
+   width:75px;
+   margin-top:-88px;
+}
+
+/***************** LOGIN *****************/
+#bgLogin {
+   background-image:url('../img/log1.jpg');
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:80% 80%;
+}
+
+.cardLogin {
+   margin-top:175px;
+   background-color:rgba(0,0,0,0.1);
+   border-width: 0px;
+}
+
+.titleLogin {
+   background-color:rgba(0,0,0,0.1);
+   border-width: 0px;
+   font-family:bebas;
+   color:white
+}
+
+.inputLogin {
+   background-color:rgba(0,0,0,0.1);
+   border-width: 0px;
+}
+
+#btnFb {
+   background-color:#3B5998;
+   color:white;
+}
+
+.btnLogin {
+   background-color:#00767A;
+   font-family:bebas;
+   color:white;
+}
+
+.cardMore {
+   background-color:rgba(0,0,0,0.3);
+   border:none
+}
+
+/***************** MOVE *****************/
+#bgMove {
+   background-image:url('../img/bgSable.png');
+   background-repeat:no-repeat;
+   background-position: 0% 60%;
+}
+
+.txtItemMove {
+   margin-top:30px;
+   color:#00767A;
+}
+
+.itemMove {
+   width:100%;
+   height:50%;
+}
+
+.iconMove {
+   margin-top:25%;
+}
+
+.titleIndexMove {
+   margin-top:-5%;
+   font-family:bebas;
+   color:white
+}
+
+.containerMove {
+   height:100%;
+   width:100%;
+}
+
+#choseMove {
+   position:absolute;
+   margin-top:auto;
+   margin-bottom:auto;
+   width:93%;
+}
+
+#txtChoseMove {
+   width:50%;
+   height:50px;
+   line-height:50px;
+   background-color:white;
+   text-align:center;
+   font-family:bebas;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+.cardFound {
+   border-width: 0px;
+}
+
+.titleFound {
+   border-width: 0px;
+   font-family:bebas;
+   color:#F5841E;
+   text-align:center
+}
+
+.btnMove {
+   background-color:#00767A;
+   font-family:bebas;
+   color:white;
+   text-align:center
+}
+
+.nameCovoit {
+   color:#F5841E;
+}
+
+.txtCovoit {
+   color:#00767A;
+}
+
+.titleOtherMove {
+   margin-top:2%;
+   font-family:bebas;
+   color:#F5841E;
+   text-align:center
+}
+
+.txtOtherMove {
+   color:#00767A;
+   margin-top:2%;
+}
+
+/***************** MEMO *****************/
+#bgMemo {
+   background-image:url('../img/memo.jpg');
+   background-size:cover;
+   background-position:center;
+}
+
+/***************** PROG *****************/
+#bgProg {
+   background-image:url('../img/bgCiel.jpg');
+   background-repeat:no-repeat;
+}
+
+#posBandeau {
+   margin-top:50%;
+   overflow:hidden;
+}
+
+.bandeauProg {
+   width:100%;
+}
+
+.listProg {
+   height:150px;
+   width:100%;
+   background-size:cover;
+   position: relative;
+}
+
+.filterProg {
+   background-color:rgba(0,0,0,0.4);
+   height:150px;
+   width:100%;
+}
+
+.blockProg {
+   margin-left:10px;
+   padding-top:5px;
+}
+
+.titleListProg {
+   color:white;
+   font-family:bebas;
+}
+
+.txtListProg {
+   color:white;
+   margin-top:-10px;
+}
+
+.bgTitleProg {
+   background:linear-gradient(rgba(0,0,0,0.3), rgba(255,255,255,0));
+   width:100%;
+   height:200px;
+   position:absolute;
+}
+
+.tabProg {
+   background-color:#00767A;
+   position:relative;
+   margin-top:-10px;
+   border:0;
+}
+
+.iconProg {
+   color:#FFF;
+}
+
+.cardProg {
+   padding:5px 10px 0 10px;
+}
+
+#titleOneProg {
+   color:#F5841E;
+}
+
+#txtOneProg {
+   color:#00767A;
+   text-align: justify;
+}
+
+.tabs-top {
+   top:-44px !important;
+   position : relative;
+}
+
+.tabs {
+   position : relative !important;
+}
+
+.tabItemProg {
+   color:#00767A;
+}
+
+/***************** GAME *****************/
+#bgGame {
+   background-image:url('../img/bgGame.jpg');
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+}
+
+.btnJouer {
+   margin-top : 55%;
+   margin-left: 40%;
+}
+
+/***************** CREDITS *****************/
+.titleInfo {
+   text-align:center;
+   margin-top:2%;
+   font-family:bebas;
+   color:#F5841E;
+}
+
+.txtInfo {
+   text-align:justify;
+   color:#00767A;
+}
+
+.txtInfoCenter {
+   text-align:center;
+   color:#00767A;
+}
+
+/***************** MAP *****************/
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.scroll {
+  height: 100%;
+}

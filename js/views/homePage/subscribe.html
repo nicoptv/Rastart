@@ -1,0 +1,39 @@
+<ion-view>
+    <ion-content padding="true" id="bgLogin">
+        <div class="card">
+            <div class="item item-divider text-center">
+                Inscription
+            </div>
+            <div ng-app="login" class="item item-text-wrap">
+                <div class="item item-text-wrap">
+                    <div class="list">
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Nom</span>
+                            <input ng-model="user.nom" type="text" placeholder="Nom">
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Prénom</span>
+                            <input ng-model="user.prenom" type="text" placeholder="Prénom">
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Email</span>
+                            <input ng-model="user.email" type="mail" placeholder="Email">
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Login</span>
+                            <input ng-model="user.login" type="text" placeholder="Login">
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Mot de passe</span>
+                            <input ng-model="user.password" type="password" placeholder="Mot de passe">
+                        </label>
+                    </div>
+                </div>
+                <div class="item item-divider">
+                    <button ng-click="createUser(user)" class="button button-block btnLogin">
+                        Inscription
+                    </button>
+                </div>
+            </div>
+    </ion-content>
+</ion-view>

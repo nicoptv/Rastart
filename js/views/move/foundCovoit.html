@@ -1,0 +1,50 @@
+<ion-view>
+  <ion-content class="back bgBeige" class="no-header" padding="true" style="top: 0;">
+     <div class="card cardFound" style="margin-top:44px">
+      <div class="item item-divider text-center titleFound">
+         Proposes un covoiturage
+      </div>
+      <div class="item item-text-wrap cardFound">
+          <div class="list">
+            <label class="item item-input">
+              <textarea ng-model="covoit.text" placeholder="Tape ton texte ici !"></textarea>
+            </label>
+          </div>
+      </div>
+      <div class="item item-divider text-center cardFound">
+          <button ng-click="createCovoit(covoit)" class="button button-small btnMove">
+            Proposer
+         </button>
+      </div>
+     </div>
+     <div ng-repeat="covoit in covoits" class="list card">
+       <div class="item item-avatar">
+         <img src="{{covoit.photo}}">
+         <h2 class="nameCovoit">{{covoit.auteur}}</h2>
+         <a ng-click="delAnnonce(covoit.uid,covoit.$id)" style="margin-top:-10%;margin-left:90%;color:grey;float:right"><i class="icon ion-close"></i></a>
+       </div>
+       <div class="item item-body">
+         <p style="color:#00767A;">
+          {{covoit.text}}
+         </p>
+         <button ng-click="sendMessage(covoit.$id)" class="button button-small btnMove">Repondre a cette offre</button>
+         <a ng-href="#" ng-click="showme=true">
+            <button ng-click="getMessage(covoit.$id)" class="button button-small btnMove">voir les reponses</button>
+         </a>
+         <div ng-show="showme">
+            <div class="list" ng-repeat="message in messages">
+                <div class="item item-avatar" style="border-bottom:1px solid grey">
+                  <img src="{{message.photo}}">
+                  <div style="margin-top:-10%">
+                     <p style="color:#F5841E;">{{ message.auteur }}</p>
+                     <p style="color:#00767A;">{{ message.message }}</p>
+                  </div>
+                  <a ng-click="delMessage(message.id_user,message.$id,covoit.$id)" style="margin-top:-22%;color:grey;float:right;"><i class="icon ion-close"></i></a>
+               </div>
+            </div>
+            <a ng-click="showme=false" style="color:grey">Cacher les réponses</a>
+         </div>
+       </div>
+   </div>
+  </ion-content>
+</ion-view>

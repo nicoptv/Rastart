@@ -1,0 +1,49 @@
+<ion-view hide-nav-bar="true" transitiontype="fade" go-native>
+   <ion-content padding="false" scroll="false" id="bgLogin">
+      <div class="card cardLogin">
+        <div class="item item-divider text-center titleLogin" ng-hide="session==true">
+          Connexion
+        </div>
+        <div class="item item-text-wrap inputLogin" ng-hide="session==true">
+           <div class="list">
+             <label class="item item-input inputLogin">
+               <input ng-model="user.email" type="text" placeholder="Nom d'utilisateur" style="color:white">
+             </label>
+             <label class="item item-input inputLogin">
+               <input ng-model="user.password" type="password" placeholder="Mot de passe" style="color:white">
+             </label>
+           </div>
+        </div>
+        <div class="item item-divider text-center inputLogin">
+           <a  href="#/menu/subscribe" class="button button-small btnLogin" ng-hide="session==true">
+            Inscription
+           </a>
+           <a ng-click="login(user)" class="button button-small btnLogin" ng-hide="session==true">
+             Connexion
+           </a>
+        </div>
+      </div>
+      <div class="text-center">
+         <button class="button butoon-small" id="btnFb" ng-hide="session==true" ng-controller="LoginFacebook" ng-click="loginFB()">
+           <i class="icon ion-social-facebook"></i> | Me connecter avec facebook
+         </button>
+      </div>
+      <div class="item item-text-wrap text-center cardMore" ng-show="session==true">
+         <div>
+            <button ng-show="session==true"  class="button button-full btnLogin">
+               Parametre compte
+            </button>
+         </div>
+         <div>
+            <button ng-show="session==true"  class="button  button-full btnLogin">
+               Favoris
+            </button>
+         </div>
+         <div>
+            <button ng-show="session==true" ng-controller="Logout" ng-click="logout()" class="button  button-full btnLogin">
+               Logout
+            </button>
+         </div>
+      </div>
+   </ion-content>
+</ion-view>

@@ -1,0 +1,31 @@
+<ion-view transitiontype="fade" go-native>
+   <ion-content padding="false"  style="background-color:#FEFEE2">
+      <div class="tabs-striped tabs-top">
+      <div class="tabs" style="background-color:#FEFEE2 !important">
+          <a class="tab-item tabItemProg" ng-href="#/menu/artistes">
+            <b>Vendredi</b>
+          </a>
+          <a class="tab-item tabItemProg" ng-href="#/menu/artistes2">
+            <b>Samedi</b>
+          </a>
+          <a class="tab-item tabItemProg" ng-href="#/menu/artistes3">
+            <b>Dimanche</b>
+          </a>
+      </div>
+      </div>
+    </div>
+    <a ng-repeat="toto in artistes" ng-href="#/menu/artiste/{{ toto.id }}">
+      <div class="listProg" style="background-image:url({{ toto.photo }});">
+         <div class="filterProg">
+            <div class="blockProg">
+               <h3 class="titleListProg">{{ toto.name }}</h3>
+               <p class="txtListProg">{{ toto.heure}}</p>
+               <p class="txtListProg">{{ toto.scene}}</p>
+            </div>
+            <h3 class="animated pulse infinite arrowList"><i class="icon ion-chevron-right"></i></h3>
+         </div>
+      </div>
+    </a>
+    <div>
+   </ion-content>
+</ion-view>

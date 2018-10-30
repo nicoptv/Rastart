@@ -1,0 +1,16 @@
+<ion-view hide-back-button="true" transitiontype="fade" go-native>
+  <ion-content class="back">
+    <a ng-repeat="camp in camping" ng-href="#/menu/camping/{{ camp.id }}">
+      <div class="listCamp" style="background-image:url({{ camp.photo }})">
+         <div class="filterCamp">
+            <div class="infoListCamp">
+               <h3 class="titleListCamp">{{ camp.name }}</h3>
+               <p class="elementListCamp">{{ camp.heure}}</p>
+               <p class="elementListCamp">{{ camp.teaser}}</p>
+            </div>
+            <h3 class="animated pulse infinite arrowList"><i class="icon ion-chevron-right"></i></h3>
+         </div>
+      </div>
+    </a>
+  </ion-content>
+</ion-view>
